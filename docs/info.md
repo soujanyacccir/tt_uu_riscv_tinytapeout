@@ -1,20 +1,10 @@
-<!---
+# Tiny RISC-V (1x1)
 
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
+Ultra-small RISC-V-like core optimized to fit a single TinyTapeout tile.
 
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
-## How it works
-
-Explain how your project works
-
-## How to test
-
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+## Summary
+- Single-cycle, RV-like instruction subset: ADDI, ADD, SUB, BEQ, LUI.
+- 8 registers (r0..r7), r0 is zero.
+- 16-word ROM containing a demo loop that increments r1.
+- GPIO in (ui_in[7:0]) and GPIO out (uo_out[7:0]).
+- NOT a full RV32I implementation: simplified to reduce area.
