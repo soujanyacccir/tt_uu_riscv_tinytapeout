@@ -28,15 +28,17 @@ module tiny_core #(parameter ROM_ADDR_BITS = 4) (
     // small regfile: 8 registers (r0..r7), r0 is hardwired zero
     wire [31:0] rd1, rd2;
     regfile8 u_rf (
-        .clk(clk),
-        .we(reg_we),
-        .ra1(rs1[2:0]),
-        .ra2(rs2[2:0]),
-        .wa (rd[2:0]),
-        .wd (reg_wd),
-        .rd1(rd1),
-        .rd2(rd2)
-    );
+    .clk(clk),
+    .reset(reset),
+    .we(reg_we),
+    .ra1(rs1[2:0]),
+    .ra2(rs2[2:0]),
+    .wa (rd[2:0]),
+    .wd (reg_wd),
+    .rd1(rd1),
+    .rd2(rd2)
+);
+
 
     // immediate
     wire [31:0] imm;
