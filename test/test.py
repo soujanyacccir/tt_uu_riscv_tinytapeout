@@ -12,4 +12,5 @@ async def test_tiny_riscv(dut):
     # wait several cycles to see counter increment
     await ClockCycles(dut.clk, 200)
 
-    dut._log.info(f"uo_out = {int(dut.uo_out.value)}")
+   dut._log.info(f"uo_out = {dut.uo_out.value.binstr}")
+
