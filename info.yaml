@@ -1,11 +1,14 @@
 project:
-  title:        "Tiny RISC-V "
-  author:       "CIT"
+  title:        "Tiny RISC-V"
+  author:       ""
   discord:      ""
-  description:  "Ultra-small RV-like core optimized for TinyTapeout 1x1"
+  description:  "Minimal RV32I-like core for TinyTapeout"
   language:     "Verilog"
   clock_hz:     50000000
-  tiles: "1x1"
+
+  # Updated tile size
+  tiles: "2x2"
+
   top_module:  "tt_um_riscv_core"
 
   source_files:
