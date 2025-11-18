@@ -10,7 +10,8 @@ module regfile8 (
     output wire [31:0] rd2
 );
 
-    reg [31:0] rf [0:7];
+    reg [31:0] rf [0:7] = '{default:32'd0};
+
 
     // r0 is hardwired zero from read side
     assign rd1 = (ra1 == 3'd0) ? 32'd0 : rf[ra1];
