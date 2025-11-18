@@ -1,6 +1,6 @@
 project:
   title:        "Tiny RISC-V"
-  author:       ""
+  author:       "CIT"
   discord:      ""
   description:  "Minimal RV32I-like core for TinyTapeout"
   language:     "Verilog"
