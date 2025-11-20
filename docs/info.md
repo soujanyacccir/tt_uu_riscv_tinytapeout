@@ -1,4 +1,4 @@
-# Tiny RISC-V (1x1)
+# Tiny RISC-V (2x2)
 
 Ultra-small RISC-V-like core optimized to fit a single TinyTapeout tile.
 
